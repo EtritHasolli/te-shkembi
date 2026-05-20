@@ -1,0 +1,52 @@
+Yes — the labels are not in a separate CSV file.
+For UTKFace, the labels are stored directly inside the image filename.
+
+The format is:
+
+age_gender_race_datetime.jpg
+
+Example:
+
+25_0_2_20170116174525125.jpg
+
+This means:
+
+age    = 25
+gender = 0
+race   = 2
+
+According to the official UTKFace dataset description, the filename format is [age]_[gender]_[race]_[date&time].jpg, where age ranges from 0 to 116, gender is 0 or 1, and race is 0 to 4.
+
+The label meanings are:
+
+Gender:
+0 = Male
+1 = Female
+
+Race / Ethnicity:
+0 = White
+1 = Black
+2 = Asian
+3 = Indian
+4 = Others
+
+
+Task 1: Gender classification
+Input: face image
+Output: Male / Female
+
+Task 2: Race / ethnicity classification
+Input: face image
+Output: White / Black / Asian / Indian / Others
+
+Task 3: Age prediction
+Input: face image
+Output: age value
+
+Task 4: Multi-task learning
+Input: face image
+Output: age + gender + race
+
+
+Gender classification + optional race classification
+
