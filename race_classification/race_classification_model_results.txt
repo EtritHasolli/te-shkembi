@@ -1,0 +1,59 @@
+Results
+Gender classification
+Training Results 
+The model was trained using a convolutional neural network (CNN) for 10 epochs. During this stage we used both training set and validation set to monitor the performance.
+
+Epoch 1/10
+1465/1465 [==============================] - 321s 218ms/step - loss: 1.3464 - accuracy: 0.4253 - val_loss: 1.0503 - val_accuracy: 0.6030
+Epoch 2/10
+1465/1465 [==============================] - 278s 190ms/step - loss: 1.1402 - accuracy: 0.5531 - val_loss: 0.9735 - val_accuracy: 0.6266
+Epoch 3/10
+1465/1465 [==============================] - 290s 198ms/step - loss: 1.0561 - accuracy: 0.6034 - val_loss: 0.8385 - val_accuracy: 0.7011
+Epoch 4/10
+1465/1465 [==============================] - 274s 187ms/step - loss: 1.0051 - accuracy: 0.6330 - val_loss: 0.8585 - val_accuracy: 0.6695
+Epoch 5/10
+1465/1465 [==============================] - 332s 227ms/step - loss: 0.9629 - accuracy: 0.6513 - val_loss: 0.7751 - val_accuracy: 0.7328
+Epoch 6/10
+1465/1465 [==============================] - 333s 227ms/step - loss: 0.9386 - accuracy: 0.6616 - val_loss: 0.8262 - val_accuracy: 0.6920
+Epoch 7/10
+1465/1465 [==============================] - 337s 230ms/step - loss: 0.9204 - accuracy: 0.6734 - val_loss: 0.7348 - val_accuracy: 0.7375
+Epoch 8/10
+1465/1465 [==============================] - 348s 237ms/step - loss: 0.8959 - accuracy: 0.6833 - val_loss: 0.6705 - val_accuracy: 0.7564
+Epoch 9/10
+1465/1465 [==============================] - 352s 240ms/step - loss: 0.8837 - accuracy: 0.6815 - val_loss: 0.7275 - val_accuracy: 0.7323
+Epoch 10/10
+1465/1465 [==============================] - 345s 236ms/step - loss: 0.8737 - accuracy: 0.6877 - val_loss: 0.6922 - val_accuracy: 0.7496
+
+
+WITH 5 Epochs
+TEST ACCURACY: 0.7361871577899453
+
+CLASSIFICATION REPORT (TEST SET):
+              precision    recall  f1-score   support
+
+       asian       0.76      0.82      0.79      1496
+       black       0.87      0.76      0.81      1478
+      indian       0.68      0.68      0.68      1628
+      others       0.28      0.56      0.38       839
+       white       0.90      0.75      0.82      4604
+
+    accuracy                           0.74     10045
+   macro avg       0.70      0.72      0.70     10045
+weighted avg       0.79      0.74      0.75     10045
+
+WITH 10 Epochs
+TEST ACCURACY: 0.7485316077650572
+
+CLASSIFICATION REPORT (TEST SET):
+              precision    recall  f1-score   support
+
+       asian       0.75      0.86      0.80      1496
+       black       0.80      0.85      0.83      1478
+      indian       0.70      0.71      0.71      1628
+      others       0.30      0.53      0.39       839
+       white       0.92      0.73      0.82      4604
+
+    accuracy                           0.75     10045
+   macro avg       0.70      0.74      0.71     10045
+weighted avg       0.79      0.75      0.76     10045
+

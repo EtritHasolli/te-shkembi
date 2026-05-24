@@ -1,6 +1,8 @@
 
 curated-dataset/*
 pre-processed/*
+pre-processed-race/*
+pre-processed-gender/*
 # Python cache
 __pycache__/
 *.py[cod]

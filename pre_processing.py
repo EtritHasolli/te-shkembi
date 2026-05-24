@@ -303,12 +303,12 @@ class UTKFacePreProcessor:
         for index_int, row_obj in split_df.iterrows():
 
             # Use gender labels instead of age groups
-            gender_label_str = row_obj["gender_label"]
+            race_label_str = row_obj["race_label"]
 
             # Create:
             # train/male
             # train/female
-            class_path_obj = split_path_obj / gender_label_str
+            class_path_obj = split_path_obj / race_label_str
             class_path_obj.mkdir(parents=True, exist_ok=True)
 
             source_image_path_obj = Path(row_obj["image_path"])
