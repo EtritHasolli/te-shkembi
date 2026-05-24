@@ -78,7 +78,7 @@ class UTKFacePreProcessor:
     def __init__(
         self,
         input_dir_str: str,
-        output_dir_str: str = "pre-processed2",
+        output_dir_str: str = "pre-processed",
         image_size_int: Optional[int] = None,
     ):
         self.input_path_obj = Path(input_dir_str)
@@ -301,48 +301,24 @@ class UTKFacePreProcessor:
         output_rows_list = []
 
         for index_int, row_obj in split_df.iterrows():
-
-            # Use gender labels instead of age groups
-            race_label_str = row_obj["race_label"]
-
-            # Create:
-            # train/male
-            # train/female
-            class_path_obj = split_path_obj / race_label_str
+            age_group_label_str = row_obj["age_group_label"]
+            class_path_obj = split_path_obj / age_group_label_str
             class_path_obj.mkdir(parents=True, exist_ok=True)
 
             source_image_path_obj = Path(row_obj["image_path"])
+            output_filename_str = f"{index_int:06d}_{source_image_path_obj.name}"
+            output_image_path_obj = class_path_obj / output_filename_str
 
-            output_filename_str = (
-                f"{index_int:06d}_{source_image_path_obj.name}"
-            )
-
-            output_image_path_obj = (
-                class_path_obj / output_filename_str
-            )
-
-            self._save_image(
-                source_image_path_obj,
-                output_image_path_obj
-            )
+            self._save_image(source_image_path_obj, output_image_path_obj)
 
             row_dict = row_obj.to_dict()
-
             row_dict["original_image_path"] = row_dict["image_path"]
-
-            # Update image path to new processed image
             row_dict["image_path"] = str(output_image_path_obj)
-
             row_dict["split"] = split_name_str
-
             output_rows_list.append(row_dict)
 
         output_df = pd.DataFrame(output_rows_list)
-
-        output_df.to_csv(
-            split_path_obj / "metadata.csv",
-            index=False
-    )
+        output_df.to_csv(split_path_obj / "metadata.csv", index=False)
 
     def _save_image(self, source_image_path_obj: Path, output_image_path_obj: Path) -> None:
         with Image.open(source_image_path_obj) as image_obj:
@@ -417,7 +393,7 @@ def build_transforms(image_size_int: Optional[int] = None):
 
 
 def prepare_data_loaders(
-    processed_dir_str: str = "pre-processed2",
+    processed_dir_str: str = "pre-processed",
     batch_size_int: int = 32,
     image_size_int: Optional[int] = None,
     num_workers_int: int = 2,
@@ -483,8 +459,8 @@ def parse_arguments():
     parser_obj.add_argument(
         "--output-dir",
         type=str,
-        default="pre-processed2",
-        help="Output folder name. Default: pre-processed2",
+        default="pre-processed",
+        help="Output folder name. Default: pre-processed",
     )
 
     return parser_obj.parse_args()
