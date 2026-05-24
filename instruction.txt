@@ -1,7 +1,27 @@
 Përshëndetje studentë,
 
 
-Për pjesën e projektit në pjesën e ushtrimeve duhet të ndjekni instruksionet më posht. Duhet te merni një dataset public (me të dhëna si: fotografi, video, apo me levizje) që është publicity available. Ky dataset duhet të pre-procesohet dhe të analizohet se qfar ndryshime na bijn në rezultate më të mira. Datasetet duhet të zgjidhen nga ato që janë zgjidhur nga punimet shkencore. Pastaj duhet të përdorni algoritmet të cilat përshtatën më shum me datasetin tuaj. Qfar pritet në përfundim të këtij projekti është real-time dhe të shohim performancen qe ka arritur sistemi juaj permes fps dhe accuracy dhe rezultatet si f1score, precision, recall, accuracy dhe confusion matrix. Sistemi qe keni krijuar duhet të krahasohet me paperat që aktualisht kan përdorur këtë dataset që keni zgjedhur. Pjesa e dokumentimit duhet të përmbaj: abstract(Përmbledhje e shkurtër e punës) me keywords, introduction(qellimi, research question të cilat duhet të realizohen pastaj te results), related work(Puna që është bërë në papers që nderlidhet me punën tuaj dhe cili është ndryshimi te metodologjia juaj),methologhy(Pipeline që keni përdorur për të arritur tek rezultati), results(Rezultatet e juaja, FPS, accuracy in real time, Precision, Recall, F1Score dhe accuracy dhe confusion matrix), discussion(Qfar ka pasur të veqant sistemi juaj, qfar e ka dallu prej paperave tjer, cilat jan dobësit dhe si do të përmisohet), conclusion and future work(Qfar keni mberritur në perfundim dhe sistemin tuaj si do e permisoni në të ardhmen) dhe referencat . Kodi mund të gjenerohet nga AI (Por do të ket pyetje reth kodit nëse studenti nuk është në gjendje të sqaroj kodin të cilin e ka shkruar ose gjeneruar me AI do të vlersohet me 0 pike) por pjesa e dokumentimit duhet të jetë ne gjuhën angleze dhe nuk duhet të jetë më shum se 30% e gjeneruar nga AI perndryshe nuk meret parasysh. Puna duhet të ndahet qysh në fillim pra secili do të mar pergjegjësi per punën e tij. Grupi duhet të përbëhet nga 4 student (Asnjë student nuk lejohet të punoj në menyrë të pavarur). Në koment shënoni secili grup datasetin të cilin keni zgjedhur, pjesëtarët e grupit, dhe se si do të ndahen përgjegjësit.
+Për pjesën e projektit në pjesën e ushtrimeve duhet të ndjekni instruksionet më posht. 
+Duhet te merni një dataset public (me të dhëna si: fotografi, video, apo me levizje) që është publicity available. 
+Ky dataset duhet të pre-procesohet dhe të analizohet se qfar ndryshime na bijn në rezultate më të mira. 
+Datasetet duhet të zgjidhen nga ato që janë zgjidhur nga punimet shkencore. 
+Pastaj duhet të përdorni algoritmet të cilat përshtatën më shum me datasetin tuaj. 
+Qfar pritet në përfundim të këtij projekti është real-time dhe të shohim performancen qe ka arritur sistemi juaj permes fps dhe accuracy dhe rezultatet si f1score, precision, recall, accuracy dhe confusion matrix. 
+Sistemi qe keni krijuar duhet të krahasohet me paperat që aktualisht kan përdorur këtë dataset që keni zgjedhur. 
+Pjesa e dokumentimit duhet të përmbaj: 
+    - abstract(Përmbledhje e shkurtër e punës) me keywords, 
+    - introduction(qellimi, research question të cilat duhet të realizohen pastaj te results), 
+    - related work(Puna që është bërë në papers që nderlidhet me punën tuaj dhe cili është ndryshimi te metodologjia juaj),
+    - methologhy(Pipeline që keni përdorur për të arritur tek rezultati), 
+    - results(Rezultatet e juaja, FPS, accuracy in real time, Precision, Recall, F1Score dhe accuracy dhe confusion matrix), 
+    - discussion(Qfar ka pasur të veqant sistemi juaj, qfar e ka dallu prej paperave tjer, cilat jan dobësit dhe si do të përmisohet), 
+    - conclusion and future work(Qfar keni mberritur në perfundim dhe sistemin tuaj si do e permisoni në të ardhmen) dhe 
+    - referencat . 
+Kodi mund të gjenerohet nga AI (Por do të ket pyetje reth kodit nëse studenti nuk është në gjendje të sqaroj kodin të cilin e ka shkruar ose gjeneruar me AI do të vlersohet me 0 pike) 
+por pjesa e dokumentimit duhet të jetë ne gjuhën angleze dhe nuk duhet të jetë më shum se 30% e gjeneruar nga AI perndryshe nuk meret parasysh. 
+Puna duhet të ndahet qysh në fillim pra secili do të mar pergjegjësi per punën e tij. 
+Grupi duhet të përbëhet nga 4 student (Asnjë student nuk lejohet të punoj në menyrë të pavarur). 
+Në koment shënoni secili grup datasetin të cilin keni zgjedhur, pjesëtarët e grupit, dhe se si do të ndahen përgjegjësit.
 
 Në rast të pyetjeve ose paqartësive, mos hezitoni të kontaktoni.
 

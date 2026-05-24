@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from tensorflow.keras.models import load_model
-from data_loader import test_data
+from gender_classification.data_loader import test_data
 
 # Load trained model
 model = load_model("gender_model.h5")

@@ -1,0 +1,42 @@
+Results
+Gender classification
+Training Results 
+The model was trained using a convolutional neural network (CNN) for 10 epochs. During this stage we used both training set and validation set to monitor the performance.
+
+Epoch 1/10
+1465/1465 [==============================] - 233s 158ms/step - loss: 0.4777 - accuracy: 0.7650 - val_loss: 0.3451 - val_accuracy: 0.8420
+Epoch 2/10
+1465/1465 [==============================] - 269s 183ms/step - loss: 0.3806 - accuracy: 0.8239 - val_loss: 0.3074 - val_accuracy: 0.8567
+Epoch 3/10
+1465/1465 [==============================] - 244s 167ms/step - loss: 0.3426 - accuracy: 0.8435 - val_loss: 0.2897 - val_accuracy: 0.8698
+Epoch 4/10
+1465/1465 [==============================] - 283s 193ms/step - loss: 0.3225 - accuracy: 0.8540 - val_loss: 0.2658 - val_accuracy: 0.8754
+Epoch 5/10
+1465/1465 [==============================] - 254s 174ms/step - loss: 0.3060 - accuracy: 0.8626 - val_loss: 0.2501 - val_accuracy: 0.8901
+Epoch 6/10
+1465/1465 [==============================] - 258s 176ms/step - loss: 0.2953 - accuracy: 0.8674 - val_loss: 0.2448 - val_accuracy: 0.8909
+Epoch 7/10
+1465/1465 [==============================] - 266s 182ms/step - loss: 0.2848 - accuracy: 0.8724 - val_loss: 0.2579 - val_accuracy: 0.8864
+Epoch 8/10
+1465/1465 [==============================] - 304s 207ms/step - loss: 0.2765 - accuracy: 0.8775 - val_loss: 0.2267 - val_accuracy: 0.9039
+Epoch 9/10
+1465/1465 [==============================] - 246s 168ms/step - loss: 0.2677 - accuracy: 0.8819 - val_loss: 0.2365 - val_accuracy: 0.8987
+Epoch 10/10
+1465/1465 [==============================] - 263s 179ms/step - loss: 0.2645 - accuracy: 0.8843 - val_loss: 0.2278 - val_accuracy: 0.9020
+
+At the final epoch, the model achieved:
+Training Accuracy: 88.43%
+Validation Accuracy: 90.20%
+Training Loss: 0.2645
+Validation Loss: 0.2278
+Those results indicate that the model performs well on unseen data. 
+Test Set Evaluation 
+The trained model was evaluated using the  test dataset consisting of 10,045 images to measure its final performance. 
+
+Precision (Female: 0.93) → When the model predicts “Female”, it is correct 93% of the time.
+Recall (Female: 0.87) → The model correctly identifies 87% of all actual female images.
+Precision (Male: 0.87) → Male predictions are correct 87% of the time.
+Recall (Male: 0.93) → The model correctly identifies 93% of all male images.
+Both classes achieved an F1-score of 0.90 - the model is a well balanced model 
+
+The confusion matrix shows that the model performed well on the test data. It correctly classified 4,342 female samples and 4,688 male samples. However, 674 female samples were incorrectly predicted as male, and 341 male samples were incorrectly predicted as female. 
