@@ -1,5 +1,5 @@
-from race_classification.data_loader import train_data, val_data
-from race_classification.race_classification_model import build_model
+from age_group_classification.data_loader import train_data, val_data
+from age_group_classification.age_group_classification_model import build_model
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
 
@@ -20,4 +20,4 @@ history = model.fit(
     class_weight=class_weights
 )
 
-model.save("race_classification_model.h5")
+model.save("age_group_classification_model.h5")
